@@ -1,0 +1,22 @@
+000100200405/* USER DEFINED FUNCTION TO CONVERT DAY NUMBER TO WORD */                                           
+000200200411             PGM                                                                                    
+000300200411             CRTRPGMOD  MODULE(DAYFUNCTS) SRCFILE(LAB10) SRCMBR(DAYFUNCTS)                          
+000400200411             CRTRPGMOD  MODULE(DAYSRPG)   SRCFILE(LAB10) SRCMBR(DAYSRPG)                            
+000500200411             crtpgm     whatday module(daysrpg dayfuncts)                                           
+000600200405                                                                                                    
+000700200411             CALL       WHATDAY                                                                     
+000800200411             DSPPGM     WHATDAY DETAIL(*MODULE)                                                     
+000900200405                                                                                                    
+001000200405/* ONE YEAR LATER SOMEONE CONSTRUCTS A BETTER PERFORMING DAYFUNCTS MODULE */                        
+001100200405/* we will call it DAYFUNCTS2 - what do you need to do */                                           
+001200200405                                                                                                    
+001300200405                                                                                                    
+001400200411             CRTRPGMOD  MODULE(DAYFUNCTS2) SRCFILE(LAB10) SRCMBR(DAYFUNCTS2)                        
+001401200411             CRTRPGMOD  MODULE(DAYSRPG) SRCFILE(LAB10) SRCMBR(DAYSRPG)                              
+001402200411             CRTPGM     WHATDAY2 MODULE(DAYSRPG DAYFUNCTS2)                                         
+001403200411                                                                                                    
+001404200411                                                                                                    
+001500200411             CALL       WHATDAY2                                                                    
+001600200405                                                                                                    
+001700200411             DSPPGM     WHATDAY2 DETAIL(*MODULE)                                                    
+001719200411             ENDPGM                                                                                 

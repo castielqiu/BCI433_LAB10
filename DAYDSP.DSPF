@@ -1,0 +1,23 @@
+000010200404     A*%%TS  SD  20200404  133611  DJ433A40    REL-V7R4M0  5770-WDS                                 
+000020200404     A*%%EC                                                                                         
+000030200404     A                                      DSPSIZ(24 80 *DS3)                                      
+000040200404     A                                      INDARA                                                  
+000050200404     A                                      CF03(03)                                                
+000060200404     A          R INPUT                                                                             
+000070200404     A*%%TS  SD  20200404  133611  DJ433A40    REL-V7R4M0  5770-WDS                                 
+000080200404     A                                  8 12'Ente Day Number: '                                     
+000090200404     A            DAYIN          1Y 0B  8 31                                                        
+000100200404     A  99                                  DSPATR(PR)                                              
+000110200404     A                                      EDTCDE(4)                                               
+000120200404     A                                  1  2USER                                                    
+000130200411     A                                  3  2'ZHI WEI QIU'                                           
+000140200404     A                                  1 21'U S E R   D E F I N E D   F U N C -                    
+000150200404     A                                      T I O N'                                                
+000160200404     A                                  1 69DATE                                                    
+000170200404     A                                      EDTCDE(Y)                                               
+000180200404     A          R OUTPUT                                                                            
+000190200404     A*%%TS  SD  20200404  133611  DJ433A40    REL-V7R4M0  5770-WDS                                 
+000200200404     A                                      OVERLAY                                                 
+000210200404     A                                 14 11'Day Name: '                                            
+000220200404     A            DAYNAME        9A  O 14 24                                                        
+000230200404     A                                 22  7'F3 - Exit'                                             
